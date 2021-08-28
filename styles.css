@@ -1,0 +1,79 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.gameOverMessage {
+    content: "";
+    height: 12vh;
+    text-align: center;
+    font-size: 9vh;
+    padding-bottom: 5vh;
+}
+
+.ticTacGrid {
+    display: grid;
+    justify-content: center;
+    align-items: content;
+    min-height: 50vh;
+    grid-template-columns: repeat(3, 10vh);
+    grid-template-rows: repeat(3, 10vh);
+}
+
+
+
+.ticTacGrid > button {
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    font-size: 8vh;
+    transition: 0.3s;
+}
+
+
+.ticTacGrid >button:hover {
+    background-color: rgba(200, 200, 200, .4);
+}
+
+.setButtons {
+    display: flex;
+    justify-content: center;
+    align-items: content;
+    flex-direction: row;
+
+}
+
+.setButtons > button {
+    outline: none;
+    border: none;
+
+    padding: 2em;
+    border-radius: 4px;
+    
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+
+    opacity: 1;
+}
+
+.setButtons > button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.resetButton {
+ background-color: violet;
+}
+
+.opponentButton {
+    background-color: #abfaf2;
+}
+
+#humanOpponent {
+    background-color: #abfaf2;
+}
+
+#computerOpponent {
+    background-color: #66d96e;
+}
